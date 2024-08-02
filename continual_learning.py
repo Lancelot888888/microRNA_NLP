@@ -1,3 +1,6 @@
+# This code is partially taken from https://github.com/nlpie-research/Compact-Biomedical-Transformers/blob/main/BioDistilBERT-Training.py
+# We would like to extend our sincerest gratitude towards them
+
 from transformers import AutoTokenizer, AutoModelForMaskedLM, DataCollatorForLanguageModeling, Trainer, TrainingArguments, TrainerCallback, ProgressCallback
 from datasets import load_from_disk
 import torch
