@@ -1,3 +1,6 @@
+# This code is partially taken from https://github.com/nlpie-research/Compact-Biomedical-Transformers/blob/main/CompactBioBERT-Distillation.py
+# we would like to extend our sincerest gratitude towards them.
+
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
