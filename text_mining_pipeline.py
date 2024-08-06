@@ -13,22 +13,26 @@ import warnings
 
 warnings.filterwarnings('ignore')
 
-# Path to the binary classification model
-BINARY_MODEL_PATH = "/path/to/models/binary_classifier/"
-# Path to the NER (Named Entity Recognition) model
-NER_MODEL_PATH = "/path/to/models/ner_model/"
+# Path to the trained binary classification model
+BINARY_MODEL_PATH = "./models/binary_classifier/"
+# Path to the trained NER (Named Entity Recognition) model
+NER_MODEL_PATH = "./models/ner_model/"
+
 # Path to the binary classification data
-BINARY_DATA_PATH = "/path/to/data/hmdd4_dataset_cleaned.csv"
+BINARY_DATA_PATH = "/path/to/datasets/MTI.csv"
 # Path to the named entity recognition data
-NER_DATA_PATH = "/path/to/data/hmdd4_re_filtered.csv"
+NER_DATA_PATH = "/path/to/datasets/MTI_NER.csv"
+
 # Directory containing the PDF files to be processed
 PDF_DIRECTORY = "/path/to/pdfs/"
 # Directory to save the annotated PDF files
 OUTPUT_DIRECTORY = "/path/to/annotated_pdfs/"
+
+
 # Path to the model tokenizer
-TOKENIZER_PATH = "/path/to/tokenizers/tinyBERT/"
-# Path to the base model for training the classifier
-BASE_MODEL_PATH = "/path/to/models/tinybert/final/model/"
+TOKENIZER_PATH = "/path/to/tokenizer" # example PubMedBERT-base-uncased-abstract-fulltext/
+# Path to the base model to be trained if you havent trained a model
+BASE_MODEL_PATH = "/path/to/model" # example PubMedBERT-base-uncased-abstract-fulltext/
 
 # Define keywords for filtering sentences
 keywords = ['mir-', 'let-', 'lin-', 'microrna-', 'mirna-']
